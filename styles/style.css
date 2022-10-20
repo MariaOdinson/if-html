@@ -3,13 +3,13 @@
   background-color: #ffffff;
   max-width: 1440px;
   max-height: 570px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .title {
   color: #383838;
   text-align: center;
-  margin: 120px auto 0 auto;
+  margin: 120px auto 0;
   font-size: 40px;
 }
 
@@ -17,7 +17,7 @@
   background-color: #f5bd41;
   height: 4px;
   width: 100px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 0;
   text-align: center;
   border: 0;
 }
