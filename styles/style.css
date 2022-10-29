@@ -1,3 +1,5 @@
+@import url("./fonts.css");
+
 .advantages {
   text-align: center;
   background-color: #ffffff;
@@ -6,11 +8,22 @@
   margin: 0 auto;
 }
 
+.body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+}
+
 .title {
+  font-weight: 500;
   color: #383838;
   text-align: center;
   margin: 120px auto 0;
   font-size: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }
 
 .underline {
@@ -22,21 +35,65 @@
   border: 0;
 }
 
-.inline-block {
-  display: inline-block;
-  width: 300px;
+.item {
+  width: 296px;
   height: 180px;
   margin: 80px 8px;
   box-sizing: border-box;
+  line-height: 19px;
 }
 
-.image-block {
+.image {
+  margin: 0 auto;
   height: 100px;
   width: 100px;
-  margin: 0 auto;
 }
 
 .description {
   color: #383838;
   font-size: 24px;
+  margin-top: 48px;
+}
+
+.footer {
+  background-color: #10367c;
+  padding: 100px 88px 120px 104px;
+}
+
+.footer-container {
+  display: flex;
+  max-width: 1248px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.footer-container-text {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 24px 0 0;
+  height: 23px;
+}
+
+.footer-container-text-1 {
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+  height: 23px;
+  margin: 23px 0 0;
+}
+
+.footer-column {
+  width: 240px;
+  line-height: 19px;
+  flex-grow: 1;
+}
+
+.copyright-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 64px;
+  line-height: 11px;
+  padding-left: 1px;
 }
