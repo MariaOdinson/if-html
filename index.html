@@ -4,42 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>TripHouse</title>
+    <link rel="icon" href="./images/favicons/favicon.ico" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body class="body">
-    <div class="advantages">
+    <div class="section-container top-section">
+      <div class="header">
+        <div class="header-logo"></div>
+
+        <div class="header-nav">
+          <div class="header-section-container">
+            <div class="header-section-link">
+              Stays
+              <hr class="header-underline" />
+            </div>
+
+            <div class="header-section-link">Attractions</div>
+          </div>
+          <div class="night"></div>
+          <div class="person"></div>
+        </div>
+      </div>
+
+      <div class="header-section_title-container">
+        <h4 class="header-section_title_text">
+          Discover stays <br />
+          to live, work or just relax
+        </h4>
+      </div>
+      <form class="form" action="/" method="get">
+        <div class="label-input">
+          <label class="label-text" for="hotel"
+            >Your destination or hotel name</label
+          >
+          <div class="input-fon border-left-radius">
+            <input
+              class="input-city input-fon border-left-radius"
+              id="hotel"
+              type="text"
+              name="hotel"
+              placeholder="New York"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="label-input">
+          <label class="label-text" for="date">Check-in — Check-out</label>
+          <div class="input-fon">
+            <input
+              class="input-date input-fon border-left-radius border-right-radius"
+              id="date"
+              type="text"
+              name="date"
+              placeholder="Tue 15 Sept — Sat 19 Sept"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="label-input">
+          <label for="people"></label>
+          <div class="input-fon">
+            <input
+              class="input-people input-fon"
+              id="people"
+              type="text"
+              name="people"
+              placeholder="2 Adults — 0 Children — 1 Room"
+            />
+          </div>
+        </div>
+
+        <div class="input-fon border-right-radius">
+          <button class="text-button border-left-radius border-right-radius">
+            Search
+          </button>
+        </div>
+      </form>
+      <div class="apps">
+        <div class="image-google"></div>
+        <div class="image-apple"></div>
+      </div>
+    </div>
+
+    <div class="section-container advantages">
       <h2 class="title">What do we offer</h2>
 
       <hr class="underline" />
 
       <div class="container">
         <div class="item">
-          <img class="image" src="./images/support.svg" alt="headphones" />
+          <div class="image support"></div>
           <p class="description">Support 24/7</p>
         </div>
 
         <div class="item">
-          <img
-            class="image"
-            src="./images/communicate.svg"
-            alt="filter applied"
-          />
+          <div class="image communicate"></div>
           <p class="description">Communicate directly</p>
         </div>
 
         <div class="item">
-          <img class="image" src="./images/book.svg" alt="computer" />
+          <div class="image book"></div>
           <p class="description">Book online</p>
         </div>
 
         <div class="item">
-          <img class="image" src="./images/reviews.svg" alt="cool" />
+          <div class="image review"></div>
           <p class="description">Real guest reviews</p>
         </div>
       </div>
     </div>
 
-    <div class="footer">
+    <div class="section-container footer">
       <div class="footer-container">
         <div class="footer-column">
           <p class="footer-container-text-1">About</p>
