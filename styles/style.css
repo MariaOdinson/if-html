@@ -115,7 +115,7 @@
 }
 
 .input-fon {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 input::placeholder {
@@ -125,24 +125,24 @@ input::placeholder {
   color: #383838;
 }
 
-.input-1 {
+.input-city {
   width: 464px;
   height: 62px;
   border: 0;
 }
 
-.input-1::placeholder {
+.input-city::placeholder {
   padding-left: 26px;
 }
 
-.input-2 {
+.input-date {
   width: 248px;
   height: 56px;
   text-align: center;
   border: 3px solid #f5bd41;
 }
 
-.input-3 {
+.input-people {
   width: 311px;
   height: 62px;
   text-align: center;
