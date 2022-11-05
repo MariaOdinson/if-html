@@ -8,89 +8,87 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body class="body">
-    <div class="top-section">
-      <div class="img-top">
-        <div class="header">
-          <div class="header-logo-left"></div>
+    <div class="section-container top-section">
+      <div class="header">
+        <div class="header-logo"></div>
 
-          <div class="header-logo-right">
-            <div class="stay-attraction">
-              <div class="stay">
-                Stays
-                <hr class="header-underline" />
-              </div>
-
-              <div class="attraction">Attractions</div>
+        <div class="header-nav">
+          <div class="header-section-container">
+            <div class="header-section-link">
+              Stays
+              <hr class="header-underline" />
             </div>
-            <div class="night"></div>
-            <div class="person"></div>
+
+            <div class="header-section-link">Attractions</div>
+          </div>
+          <div class="night"></div>
+          <div class="person"></div>
+        </div>
+      </div>
+
+      <div class="header-section_title-container">
+        <h4 class="header-section_title_text">
+          Discover stays <br />
+          to live, work or just relax
+        </h4>
+      </div>
+      <form class="form" action="/" method="get">
+        <div class="label-input">
+          <label class="label-text" for="hotel"
+            >Your destination or hotel name</label
+          >
+          <div class="input-fon border-left-radius">
+            <input
+              class="input-1 border-left-radius"
+              id="hotel"
+              type="text"
+              name="hotel"
+              placeholder="New York"
+              required
+            />
           </div>
         </div>
 
-        <div class="page">
-          <p class="page-text">
-            Discover stays <br />
-            to live, work or just relax
-          </p>
+        <div class="label-input">
+          <label class="label-text" for="date">Check-in — Check-out</label>
+          <div class="input-fon">
+            <input
+              class="input-2 border-left-radius border-right-radius"
+              id="date"
+              type="text"
+              name="date"
+              placeholder="Tue 15 Sept — Sat 19 Sept"
+              required
+            />
+          </div>
         </div>
-        <form class="form" action="/" method="get">
-          <div class="label-input">
-            <label class="label-text" for="hotel"
-              >Your destination or hotel name</label
-            >
-            <div class="input-fon border-left-radius">
-              <input
-                class="input-1 border-left-radius"
-                id="hotel"
-                type="text"
-                name="hotel"
-                placeholder="New York"
-                required
-              />
-            </div>
-          </div>
 
-          <div class="label-input">
-            <label class="label-text" for="date">Check-in — Check-out</label>
-            <div class="input-fon">
-              <input
-                class="input-2 border-left-radius border-right-radius"
-                id="date"
-                type="text"
-                name="date"
-                placeholder="Tue 15 Sept — Sat 19 Sept"
-                required
-              />
-            </div>
+        <div class="label-input">
+          <label for="people"></label>
+          <div class="input-fon">
+            <input
+              class="input-3"
+              id="people"
+              type="text"
+              name="people"
+              placeholder="2 Adults — 0 Children — 1 Room"
+            />
           </div>
-
-          <div class="label-input">
-            <label for="people"></label>
-            <div class="input-fon">
-              <input
-                class="input-3"
-                id="people"
-                type="text"
-                name="people"
-                placeholder="2 Adults — 0 Children — 1 Room"
-              />
-            </div>
-          </div>
-
-          <div class="input-fon border-right-radius">
-            <button class="text-button border-left-radius border-right-radius">
-              Search
-            </button>
-          </div>
-        </form>
-        <div class="apps">
-          <div class="image-google"></div>
-          <div class="image-apple"></div>
         </div>
+
+        <div class="input-fon border-right-radius">
+          <button class="text-button border-left-radius border-right-radius">
+            Search
+          </button>
+        </div>
+      </form>
+      <div class="apps">
+        <div class="image-google"></div>
+        <div class="image-apple"></div>
       </div>
     </div>
 
-    <div class="advantages">
+    <div class="section-container advantages">
       <h2 class="title">What do we offer</h2>
 
       <hr class="underline" />
@@ -118,7 +116,7 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div class="section-container footer">
       <div class="footer-container">
         <div class="footer-column">
           <p class="footer-container-text-1">About</p>
