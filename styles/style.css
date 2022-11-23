@@ -1,4 +1,5 @@
 @import url("./fonts.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -97,6 +98,10 @@
   width: 205px;
 }
 
+.header__image--menu {
+  display: none;
+}
+
 .header__nav {
   display: flex;
   justify-content: space-evenly;
@@ -138,7 +143,6 @@
 
 .page__container {
   font-size: 50px;
-  font-weight: 500;
   color: #ffffff;
   margin-top: 150px;
   padding-left: 104px;
@@ -148,27 +152,45 @@
 
 .page__title-text {
   margin: 0;
+  font-weight: 500;
+  line-height: 61px;
 }
 
 .top-section__form {
-  padding-left: 104px;
-  padding-right: 104px;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
   color: #ffffff;
   font-size: 18px;
   display: flex;
-  flex-direction: row;
   align-items: flex-end;
-  box-sizing: border-box;
+  /*  box-sizing: border-box;*/
 }
 
-.top-section__label-input {
+.ts__label-input {
   display: flex;
   flex-direction: column;
 }
 
-.label-text {
-  margin-left: 24px;
-  margin-bottom: 24px;
+.ts__flex--city-large {
+  flex-basis: 38%;
+}
+
+.ts__flex--date-large {
+  flex-basis: 21%;
+  min-width: 230px;
+}
+
+.ts__flex--people-large {
+  flex-basis: 25.5%;
+  min-width: 270px;
+}
+
+.label-text--large {
+  margin-left: 27px;
+}
+
+.only-small {
+  display: none;
 }
 
 .input-fon {
@@ -182,38 +204,55 @@ input::placeholder {
   color: #383838;
 }
 
-.top-section__input--city {
-  width: 464px;
+.ts__input--city {
+  width: 100%;
   height: 62px;
   border: 0;
+  margin-top: 24px;
 }
 
-.top-section__input--city::placeholder {
+.ts__input--city::placeholder {
   padding-left: 26px;
 }
 
+.input-date__wrap {
+  margin-top: 24px;
+}
+
+.input-date__fon-wrap {
+  padding-right: 6px;
+}
+
 .top-section__input--date {
-  width: 248px;
+  width: 100%;
   height: 56px;
   text-align: center;
   border: 3px solid #f5bd41;
+  line-height: unset;
 }
 
 .top-section__input--people {
-  width: 311px;
+  width: 100%;
   height: 62px;
   text-align: center;
   border: 0;
+  line-height: unset;
 }
 
-.text-button {
-  width: 190px;
-  height: 64px;
+.ts__flex--button-large {
+  flex-basis: 15.5%;
+}
+
+.ts__text-button {
+  width: 100%;
+  height: 62px;
   text-align: center;
   color: #ffffff;
   font-size: 24px;
   background-color: #3077c6;
   border: 0;
+  flex-basis: fit-content;
+  padding: 0 16px;
 }
 
 .top-section__apps {
@@ -383,6 +422,142 @@ input::placeholder {
     width: 100%;
   }
 
+  .border-left-radius {
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+  }
+
+  .border-right-radius {
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+  }
+
+  .only-small {
+    display: inline-block;
+  }
+
+  .only-large {
+    display: none;
+  }
+
+  .top-section__form {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 8px;
+    margin: 0 1rem;
+    background-color: #f5bd41;
+    align-items: stretch;
+  }
+
+  .ts__label-input {
+    flex-direction: row;
+  }
+
+  .ts__flex--city-large {
+    flex-basis: unset;
+  }
+
+  .ts__input--city {
+    height: auto;
+    margin-top: unset;
+  }
+
+  .ts__input--city::placeholder {
+    padding-left: 2px;
+  }
+
+  .label-input-city--small {
+    display: flex;
+    width: 100%;
+  }
+
+  .label-image--lope {
+    width: 16px;
+    height: 16px;
+    fill: #bfbfbf;
+    margin: 16px 8px 16px 12px;
+  }
+
+  .ts__label-input--gap {
+    gap: 8px;
+  }
+
+  .ts__flex--date-large {
+    flex-basis: unset;
+    min-width: unset;
+  }
+
+  .input-date__wrap {
+    margin-top: unset;
+  }
+
+  .top-section__input--date {
+    text-align: left;
+    width: 100%;
+    height: unset;
+    border: 0;
+    line-height: 18px;
+  }
+
+  .ts__label-input--fon--sm {
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 4px 0;
+    height: 3rem;
+  }
+
+  .label-input--date {
+    width: 50%;
+    padding: 0 8px;
+  }
+
+  .ts__label-text--sm {
+    color: #383838;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .ts__flex--people-large {
+    flex-basis: unset;
+    min-width: unset;
+  }
+
+  .top-section__input--people {
+    text-align: left;
+    width: 100%;
+    height: unset;
+    border: 0;
+    line-height: 18px;
+  }
+
+  .label-input--people--sm {
+    width: calc(100% / 3);
+    padding: 0 8px;
+  }
+
+  .vertical-line {
+    border-left: 1px solid #bfbfbf;
+    height: 2rem;
+    margin-top: 8px;
+  }
+
+  .ts__flex--button-large {
+    flex-basis: unset;
+  }
+
+  .ts__text-button {
+    width: 100%;
+    height: 100%;
+    font-size: 19px;
+    flex-basis: unset;
+    padding: unset;
+  }
+
+  .top-section__apps {
+    margin: 32px auto;
+  }
+
   .advantages {
     max-height: unset;
   }
@@ -421,6 +596,55 @@ input::placeholder {
     width: 100%;
   }
 
+  .header {
+    padding: 16px 16px 40px 16px;
+  }
+
+  .header__image--logo {
+    height: 24px;
+    width: 122px;
+    margin-right: 110px;
+  }
+
+  .header-section-link {
+    display: none;
+  }
+
+  .header-underline {
+    display: none;
+  }
+
+  .header__image--night {
+    height: 16px;
+    width: 16px;
+    margin-right: 16px;
+    margin-left: 0;
+  }
+
+  .header__image--person {
+    height: 24px;
+    width: 24px;
+  }
+
+  .header__image--menu {
+    display: inline;
+    height: 16px;
+    width: 24px;
+    margin-left: 16px;
+  }
+
+  .page__container {
+    font-size: 30px;
+    margin-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 29px;
+  }
+
+  .page__title-text {
+    line-height: 37px;
+  }
+
   .advantages__title {
     font-size: 28px;
     margin-top: 24px;
@@ -429,6 +653,11 @@ input::placeholder {
 
   .underline {
     display: none;
+  }
+
+  input::placeholder {
+    font-size: 15px;
+    font-weight: 500;
   }
 
   .advantages {
@@ -474,6 +703,7 @@ input::placeholder {
   .footer-container--title--logo-sm {
     height: 19px;
   }
+
   .logo-color-sm {
     fill: #ffffff;
   }
