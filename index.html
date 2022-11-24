@@ -171,6 +171,17 @@
           d="M87.5 33.333H61.208l3.959-19.041.125-1.334a6.272 6.272 0 0 0-1.834-4.416l-4.416-4.375-27.417 27.458a8.147 8.147 0 0 0-2.458 5.875v41.667c0 4.583 3.75 8.333 8.333 8.333H75a8.277 8.277 0 0 0 7.667-5.083L95.25 53.042A8.232 8.232 0 0 0 95.833 50v-8.333c0-4.584-3.75-8.334-8.333-8.334ZM87.5 50 75 79.167H37.5V37.5l18.083-18.083-4.625 22.25H87.5V50ZM4.167 37.5h16.666v50H4.167v-50Z"
         />
       </symbol>
+      <symbol id="menu" viewBox="0 0 24 16">
+        <path
+          fill="#fff"
+          d="M0 16h24v-2.667H0V16Zm0-6.667h24V6.667H0v2.666ZM0 0v2.667h24V0H0Z"
+        />
+      </symbol>
+      <symbol id="lope" viewBox="0 0 16 16">
+        <path
+          d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574Zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117Z"
+        />
+      </symbol>
     </svg>
 
     <div class="section-container top-section">
@@ -194,6 +205,9 @@
           <svg class="header__image header__image--person">
             <use href="#person" />
           </svg>
+          <svg class="header__image header__image--menu">
+            <use href="#menu" />
+          </svg>
         </div>
       </div>
 
@@ -203,14 +217,17 @@
           to live, work or just relax
         </h4>
       </div>
-      <!--<form class="top-section__form" action="/" method="get">
-        <div class="top-section__label-input">
-          <label class="label-text" for="hotel"
-            >Your destination or hotel name</label
-          >
-          <div class="input-fon border-left-radius">
+
+      <form class="top-section__form" action="/" method="get">
+        <div
+          class="ts__label-input ts__label-input--fon--sm ts__flex--city-large"
+        >
+          <div class="only-large">
+            <label class="label-text--large" for="hotel">
+              Your destination or hotel name
+            </label>
             <input
-              class="top-section__input&#45;&#45;city input-fon border-left-radius"
+              class="ts__input--city input-fon border-left-radius"
               id="hotel"
               type="text"
               name="hotel"
@@ -218,41 +235,132 @@
               required
             />
           </div>
-        </div>
 
-        <div class="top-section__label-input">
-          <label class="label-text" for="date">Check-in — Check-out</label>
-          <div class="input-fon">
+          <div class="label-input-city--small only-small">
+            <svg class="label-image--lope">
+              <use href="#lope" />
+            </svg>
             <input
-              class="top-section__input&#45;&#45;date input-fon border-left-radius border-right-radius"
-              id="date"
+              class="ts__input--city border-left-radius"
+              id="hotel-small"
               type="text"
-              name="date"
-              placeholder="Tue 15 Sept — Sat 19 Sept"
+              name="hotel"
+              placeholder="Your destination or hotel name"
               required
             />
           </div>
         </div>
 
-        <div class="top-section__label-input">
-          <label for="people"></label>
-          <div class="input-fon">
+        <div class="ts__label-input ts__label-input--gap ts__flex--date-large">
+          <div class="only-large">
+            <label class="label-text--large" for="date">
+              Check-in — Check-out
+            </label>
+            <div class="input-date__wrap">
+              <div class="input-fon input-date__fon-wrap">
+                <input
+                  class="top-section__input--date input-fon border-left-radius border-right-radius"
+                  id="date"
+                  type="text"
+                  name="date"
+                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="ts__label-input--fon--sm label-input--date only-small">
+            <label class="ts__label-text--sm" for="date-start">
+              Check-in date
+            </label>
             <input
-              class="top-section__input&#45;&#45;people input-fon"
+              class="top-section__input--date border-left-radius border-right-radius"
+              id="date-start"
+              type="text"
+              name="date"
+              placeholder="Tue 15 Sept 2020"
+              required
+            />
+          </div>
+
+          <div class="ts__label-input--fon--sm label-input--date only-small">
+            <label class="ts__label-text--sm" for="date-end">
+              Check-out date
+            </label>
+            <input
+              class="top-section__input--date border-left-radius border-right-radius"
+              id="date-end"
+              type="text"
+              name="date"
+              placeholder="Sat 19 Sept 2020"
+              required
+            />
+          </div>
+        </div>
+
+        <div
+          class="ts__label-input ts__label-input--fon--sm ts__flex--people-large"
+        >
+          <div class="only-large">
+            <label for="people"></label>
+            <input
+              class="top-section__input--people input-fon"
               id="people"
               type="text"
               name="people"
               placeholder="2 Adults — 0 Children — 1 Room"
             />
           </div>
+
+          <div class="label-input--people--sm border-left-radius only-small">
+            <label class="ts__label-text--sm" for="adults">Adults</label>
+            <input
+              class="top-section__input--people border-left-radius"
+              id="adults"
+              type="text"
+              name="people"
+              placeholder="2"
+            />
+          </div>
+
+          <div class="vertical-line"></div>
+
+          <div class="label-input--people--sm only-small">
+            <label class="ts__label-text--sm" for="children">Children</label>
+            <input
+              class="top-section__input--people"
+              id="children"
+              type="text"
+              name="people"
+              placeholder="0"
+            />
+          </div>
+
+          <div class="vertical-line"></div>
+
+          <div class="label-input--people--sm border-right-radius only-small">
+            <label class="ts__label-text--sm" for="room">Rooms</label>
+            <input
+              class="top-section__input--people border-right-radius"
+              id="room"
+              type="text"
+              name="people"
+              placeholder="1"
+            />
+          </div>
         </div>
 
-        <div class="input-fon border-right-radius">
-          <button class="text-button border-left-radius border-right-radius">
+        <div
+          class="ts__label-input--fon--sm input-fon border-right-radius ts__flex--button-large"
+        >
+          <button
+            class="ts__text-button border-left-radius border-right-radius"
+          >
             Search
           </button>
         </div>
-      </form>-->
+      </form>
 
       <div class="top-section__apps">
         <svg class="apps--image-google">
