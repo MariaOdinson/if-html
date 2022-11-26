@@ -9,6 +9,7 @@
   text-align: center;
   background-color: #ffffff;
   max-height: 570px;
+  position: relative;
 }
 
 .body {
@@ -112,17 +113,30 @@
   margin: 12px 24px 0 0;
 }
 
+.header-section-link:hover:after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #f5bd41;
+  position: absolute;
+  top: 48px;
+  left: calc(50% - 50px);
+}
+
+.stays-hover-line:hover:after {
+  left: 4px;
+  width: 50px;
+}
+
+.attractions-hover-line:hover:after {
+  left: 87px;
+  width: 110px;
+}
+
 .header__nav-container {
   display: flex;
   font-size: 24px;
-}
-
-.header-underline {
-  background-color: #f5bd41;
-  height: 4px;
-  width: 50px;
-  margin: 8px auto 0;
-  border: 0;
+  position: relative;
 }
 
 .logo-color {
@@ -163,7 +177,6 @@
   font-size: 18px;
   display: flex;
   align-items: flex-end;
-  /*  box-sizing: border-box;*/
 }
 
 .ts__label-input {
@@ -290,19 +303,21 @@ input::placeholder {
   font-size: 40px;
 }
 
+.advantages__title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #f5bd41;
+  position: absolute;
+  top: 68px;
+  left: calc(50% - 50px);
+  width: 100px;
+}
+
 .advantages__container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.underline {
-  background-color: #f5bd41;
-  height: 4px;
-  width: 100px;
-  margin: 20px auto 0;
-  text-align: center;
-  border: 0;
 }
 
 .advantages__item {
@@ -322,6 +337,77 @@ input::placeholder {
   color: #383838;
   font-size: 24px;
   margin-top: 48px;
+}
+
+.homes {
+  text-align: center;
+  background-color: #eaf0f9;
+  max-height: 820px;
+}
+
+.homes__title {
+  font-size: 40px;
+  padding-top: 120px;
+  font-weight: 500;
+  color: #383838;
+  text-align: center;
+}
+
+.homes-container {
+  display: flex;
+  column-gap: 16px;
+  justify-content: center;
+  margin-top: 104px;
+  padding-bottom: 120px;
+  position: relative;
+  flex-wrap: wrap;
+  overflow: hidden;
+  max-height: 431px;
+}
+
+.homes__item {
+  margin-bottom: 120px;
+}
+
+.homes__item--image {
+  width: 18.5rem;
+  height: 18.5rem;
+  margin-bottom: 24px;
+}
+
+.homes__description {
+  font-size: 24px;
+  font-weight: 400;
+  color: #3077c6;
+  text-align: left;
+}
+
+.homes__description p:first-child {
+  margin-bottom: 24px;
+}
+
+.homes__description p:last-child {
+  color: #bfbfbf;
+}
+
+.ellipse {
+  background: #f3f3f4;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 3px 3px #12121269;
+  position: absolute;
+  top: 22%;
+  left: 91.5%;
+}
+
+.polygon {
+  fill: none;
+  width: 14px;
+  height: 21px;
 }
 
 .footer {
@@ -566,6 +652,36 @@ input::placeholder {
     margin: 80px 0;
   }
 
+  .homes__title {
+    font-size: 28px;
+    padding-top: 80px;
+  }
+
+  .homes__item--image {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 8px;
+  }
+
+  .image-hotel {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .homes__description {
+    font-size: 18px;
+  }
+
+  .homes-container {
+    margin-top: 32px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }
+
+  .homes__description p:first-child {
+    margin-bottom: 4px;
+  }
+
   .footer-column {
     margin-left: 10px;
   }
@@ -610,10 +726,6 @@ input::placeholder {
     display: none;
   }
 
-  .header-underline {
-    display: none;
-  }
-
   .header__image--night {
     height: 16px;
     width: 16px;
@@ -651,10 +763,6 @@ input::placeholder {
     margin-bottom: 32px;
   }
 
-  .underline {
-    display: none;
-  }
-
   input::placeholder {
     font-size: 15px;
     font-weight: 500;
@@ -667,6 +775,10 @@ input::placeholder {
   .advantages__item {
     margin: 0 8px 32px 8px;
     height: 104px;
+  }
+
+  .advantages__title::after {
+    display: none;
   }
 
   .advantages__item:last-child {
@@ -684,9 +796,53 @@ input::placeholder {
     margin-bottom: 0;
   }
 
+  .homes__title {
+    font-size: 28px;
+    padding-top: 40px;
+  }
+
+  .homes__item--image {
+    width: 9.75rem;
+    height: 9.7rem;
+    margin-bottom: 8px;
+  }
+
+  .image-hotel {
+    width: 9.75rem;
+    height: 9.7rem;
+  }
+
+  .homes__description {
+    font-size: 12px;
+  }
+
+  .homes-container {
+    margin-top: 32px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+  }
+
+  .homes__description p:first-child {
+    margin-bottom: 4px;
+  }
+
+  .homes__item {
+    margin-bottom: 0;
+  }
+
+  .ellipse {
+    width: 28px;
+    height: 28px;
+    top: 23%;
+    box-shadow: 0 2px 3px #12121269;
+  }
+
+  .polygon {
+    width: 6px;
+  }
+
   .footer-container__title {
     font-size: 15px;
-    text-decoration: underline;
     margin-top: 0;
     margin-bottom: 32px;
   }
