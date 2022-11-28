@@ -189,15 +189,32 @@
           d="M.941 19.823 7.1 11.612a2 2 0 0 0 0-2.4L.941 1"
         />
       </symbol>
+      <symbol id="polygon-destinations" viewBox="0 0 21 9">
+        <path
+          stroke="#383838"
+          stroke-width="2"
+          d="m1.176 1 8.212 6.159a2 2 0 0 0 2.4 0L20 1"
+        />
+      </symbol>
+      <symbol id="sign_person" viewBox="0 0 50 45">
+        <path
+          fill="#3077C6"
+          d="M28.652 34.748c0-2.056.511-4.03 1.473-5.79a54.137 54.137 0 0 0-2.782-1.472.362.362 0 0 1-.205-.338v-8.08a3.776 3.776 0 0 0 1.688-3.141V7.549A7.55 7.55 0 0 0 21.276 0h-1.8a7.55 7.55 0 0 0-7.549 7.55v8.377c0 1.31.675 2.465 1.688 3.14v8.081a.38.38 0 0 1-.205.338c-1.155.562-6.75 3.386-11.937 7.651A4.04 4.04 0 0 0 0 38.277v5.739h32.979a10.52 10.52 0 0 1-.788-.726 12.01 12.01 0 0 1-3.54-8.542Z"
+        />
+        <path
+          fill="#3077C6"
+          d="M40.732 25.48c-5.114 0-9.267 4.154-9.267 9.268 0 5.115 4.153 9.268 9.267 9.268 5.115 0 9.268-4.153 9.268-9.268a9.266 9.266 0 0 0-9.268-9.267Zm5.422 10.618h-4.071v4.072h-2.7v-4.072H35.31v-2.7h4.071v-4.071h2.7v4.07h4.072v2.701Z"
+        />
+      </symbol>
     </svg>
 
     <div class="section-container top-section">
-      <div class="header">
+      <header class="header">
         <svg class="header__image header__image--logo">
           <use class="logo-color" href="#logo" />
         </svg>
 
-        <div class="header__nav">
+        <nav class="header__nav">
           <div class="header__nav-container">
             <div class="header-section-link stays-hover-line">Stays</div>
 
@@ -214,8 +231,8 @@
           <svg class="header__image header__image--menu">
             <use href="#menu" />
           </svg>
-        </div>
-      </div>
+        </nav>
+      </header>
 
       <div class="page__container">
         <h4 class="page__title-text">
@@ -378,108 +395,210 @@
       </div>
     </div>
 
-    <div class="section-container advantages">
-      <h2 class="advantages__title">What do we offer</h2>
+    <main>
+      <section class="section-container advantages">
+        <h2 class="advantages__title">What do we offer</h2>
 
-      <div class="advantages__container">
-        <div class="col-lg-3 col-md-6 col-sm-3 advantages__item">
-          <svg class="advantages__image">
-            <use href="#support" />
-          </svg>
-          <p class="description">Support 24/7</p>
+        <div class="advantages__container">
+          <figure class="col-lg-3 col-md-6 col-sm-3 advantages__item">
+            <svg class="advantages__image">
+              <use href="#support" />
+            </svg>
+            <figcaption class="description">Support 24/7</figcaption>
+          </figure>
+
+          <figure class="col-lg-3 col-sm-3 col-md-6 advantages__item">
+            <svg class="advantages__image">
+              <use href="#communicate" />
+            </svg>
+            <figcaption class="description">Communicate directly</figcaption>
+          </figure>
+
+          <figure class="col-lg-3 col-sm-3 col-md-6 advantages__item">
+            <svg class="advantages__image">
+              <use href="#book" />
+            </svg>
+            <figcaption class="description">Book online</figcaption>
+          </figure>
+
+          <figure class="col-lg-3 col-sm-3 col-md-6 advantages__item">
+            <svg class="advantages__image">
+              <use href="#reviews" />
+            </svg>
+            <figcaption class="description">Real guest reviews</figcaption>
+          </figure>
         </div>
+      </section>
 
-        <div class="col-lg-3 col-sm-3 col-md-6 advantages__item">
-          <svg class="advantages__image">
-            <use href="#communicate" />
-          </svg>
-          <p class="description">Communicate directly</p>
-        </div>
+      <section class="section-container homes">
+        <h2 class="homes__title">Homes guests loves</h2>
+        <div class="homes-container">
+          <figure class="homes__item">
+            <div class="homes__item--image">
+              <img
+                class="image-hotel"
+                src="images/leopold.png"
+                alt="Hotel Leopold"
+              />
+            </div>
+            <figcaption class="homes__description">
+              <p>Hotel Leopold</p>
+              <p>Saint Petersburg, Russia</p>
+            </figcaption>
+          </figure>
 
-        <div class="col-lg-3 col-sm-3 col-md-6 advantages__item">
-          <svg class="advantages__image">
-            <use href="#book" />
-          </svg>
-          <p class="description">Book online</p>
-        </div>
+          <figure class="homes__item">
+            <div class="homes__item--image">
+              <img
+                class="image-hotel"
+                src="images/sunshine.png"
+                alt="Apartment Sunshine"
+              />
+            </div>
+            <figcaption class="homes__description">
+              <p>Apartment Sunshine</p>
+              <p>Santa Cruz de Tenerife,<br />Spain</p>
+            </figcaption>
+          </figure>
 
-        <div class="col-lg-3 col-sm-3 col-md-6 advantages__item">
-          <svg class="advantages__image">
-            <use href="#reviews" />
-          </svg>
-          <p class="description">Real guest reviews</p>
-        </div>
-      </div>
-    </div>
+          <figure class="homes__item">
+            <div class="homes__item--image">
+              <img
+                class="image-hotel"
+                src="images/kunerad.png"
+                alt="Villa Kunerad"
+              />
+            </div>
+            <figcaption class="homes__description">
+              <p>Villa Kunerad</p>
+              <p>Vysokie Tatry, Slowakia</p>
+            </figcaption>
+          </figure>
 
-    <div class="section-container homes">
-      <h2 class="homes__title">Homes guests loves</h2>
-      <div class="homes-container">
-        <div class="homes__item">
-          <div class="homes__item--image">
-            <img
-              class="image-hotel"
-              src="images/leopold.png"
-              alt="Hotel Leopold"
-            />
+          <figure class="homes__item">
+            <div class="homes__item--image">
+              <img
+                class="image-hotel"
+                src="images/friendship.png"
+                alt="Hostel Friendship"
+              />
+            </div>
+            <figcaption class="homes__description">
+              <p>Hostel Friendship</p>
+              <p>Berlin, Germany</p>
+            </figcaption>
+          </figure>
+
+          <div class="ellipse">
+            <svg class="polygon">
+              <use href="#polygon" />
+            </svg>
           </div>
-          <div class="homes__description">
-            <p>Hotel Leopold</p>
-            <p>Saint Petersburg, Russia</p>
-          </div>
+        </div>
+      </section>
+
+      <section class="section-container destinations">
+        <h2 class="destinations__title">The best destinations</h2>
+
+        <div class="destinations__tab">
+          <button class="tab-button">Regions</button>
+
+          <button class="tab-button">Cities</button>
+
+          <button class="tab-button only-large">Places of interest</button>
+          <button class="tab-button only-small">Places</button>
         </div>
 
-        <div class="homes__item">
-          <div class="homes__item--image">
-            <img
-              class="image-hotel"
-              src="images/sunshine.png"
-              alt="Apartment Sunshine"
-            />
-          </div>
-          <div class="homes__description">
-            <p>Apartment Sunshine</p>
-            <p>Santa Cruz de Tenerife,<br />Spain</p>
-          </div>
-        </div>
+        <div class="destinations-container">
+          <figure class="destinations__item">
+            <div class="destinations__item--image">
+              <img
+                class="image-region"
+                src="images/maldives.png"
+                alt="Beach of Maldives"
+              />
+              <button class="destinations__item--book">Book now</button>
+            </div>
+            <figcaption class="destinations__description">
+              <p>Maldives</p>
+            </figcaption>
+          </figure>
 
-        <div class="homes__item only-large">
-          <div class="homes__item--image">
-            <img
-              class="image-hotel"
-              src="images/kunerad.png"
-              alt="Villa Kunerad"
-            />
-          </div>
-          <div class="homes__description">
-            <p>Villa Kunerad</p>
-            <p>Vysokie Tatry, Slowakia</p>
-          </div>
-        </div>
+          <figure class="destinations__item">
+            <div class="destinations__item--image">
+              <img
+                class="image-region"
+                src="images/spain.png"
+                alt="Beach of Spain"
+              />
+              <button class="destinations__item--book">Book now</button>
+            </div>
+            <figcaption class="destinations__description">
+              <p>Spain</p>
+            </figcaption>
+          </figure>
 
-        <div class="homes__item only-large">
-          <div class="homes__item--image">
-            <img
-              class="image-hotel"
-              src="images/friendship.png"
-              alt="Hostel Friendship"
-            />
-          </div>
-          <div class="homes__description">
-            <p>Hostel Friendship</p>
-            <p>Berlin, Germany</p>
-          </div>
-        </div>
+          <figure class="destinations__item">
+            <div class="destinations__item--image">
+              <img
+                class="image-region"
+                src="images/norway.png"
+                alt="Mountain in Norway"
+              />
+              <button class="destinations__item--book">Book now</button>
+            </div>
+            <figcaption class="destinations__description">
+              <p>Norway</p>
+            </figcaption>
+          </figure>
 
-        <div class="ellipse">
-          <svg class="polygon">
-            <use href="#polygon" />
-          </svg>
-        </div>
-      </div>
-    </div>
+          <figure class="destinations__item">
+            <div class="destinations__item--image">
+              <img
+                class="image-region"
+                src="images/island.png"
+                alt="seaside of Island"
+              />
+              <button class="destinations__item--book">Book now</button>
+            </div>
+            <figcaption class="destinations__description">
+              <p>Island</p>
+            </figcaption>
+          </figure>
 
-    <div class="section-container footer">
+          <figure class="destinations__ellipse">
+            <svg class="polygon only-large">
+              <use href="#polygon-destinations" />
+            </svg>
+            <svg class="polygon only-small">
+              <use href="#polygon" />
+            </svg>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-container sign-up only-large">
+        <div class="sign-up__fon">
+          <div class="sign-up__stock">
+            <div class="stock-ellipse">
+              <svg class="sign-person">
+                <use href="#sign_person" />
+              </svg>
+            </div>
+            <div class="stock-wrap">
+              <p class="stock--text">
+                Sign up and get 20% off your first booking
+              </p>
+              <button class="sign-button"> Sign up </button>
+            </div>
+          </div>
+
+          <div class="sign-up__close"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-container footer">
       <div class="footer__container title-general">
         <svg class="col-lg-3 col-sm-6 footer-container--title--logo-sm">
           <use class="logo-color-sm" href="#logo" />
@@ -516,6 +635,6 @@
           © 2022 Triphouse, Inc. All rights reserved
         </p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
