@@ -119,8 +119,11 @@
   height: 4px;
   background-color: #f5bd41;
   position: absolute;
-  top: 48px;
+  top: 40px;
   left: calc(50% - 50px);
+}
+.stays-hover-line {
+  margin-top: 4px;
 }
 
 .stays-hover-line:hover:after {
@@ -145,6 +148,9 @@
   100% {
     background-color: #f5bd41;
   }
+}
+.attractions-hover-line {
+  margin-top: 4px;
 }
 
 .attractions-hover-line:hover:after {
@@ -196,7 +202,7 @@
 .page__container {
   font-size: 50px;
   color: #ffffff;
-  margin-top: 150px;
+  margin-top: 157px;
   padding-left: 104px;
   padding-right: 104px;
   margin-bottom: 98px;
@@ -356,6 +362,8 @@ input::placeholder {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0 98px;
+  margin-top: 24px;
 }
 
 .advantages__item {
@@ -434,7 +442,7 @@ input::placeholder {
   align-items: center;
   box-shadow: 2px 3px 3px #12121269;
   position: absolute;
-  top: 28%;
+  top: 30%;
   left: 91.5%;
 }
 
@@ -586,7 +594,7 @@ input::placeholder {
   display: flex;
   justify-content: flex-start;
   margin: 0 104px;
-  height: 200px;
+  height: 12.5rem;
   position: relative;
 }
 
@@ -1099,7 +1107,7 @@ input::placeholder {
   .ellipse {
     width: 28px;
     height: 28px;
-    top: 30%;
+    top: 28%;
     box-shadow: 0 2px 3px #12121269;
   }
 
@@ -1169,8 +1177,68 @@ input::placeholder {
     margin-bottom: 0;
   }
 
+  .sign-up {
+    width: 100%;
+  }
+
+  .sign-up__fon {
+    padding: 24px 16px 24px 49px;
+    margin: 0;
+    height: 6.625rem;
+    background-color: #ffffff;
+  }
+
   .destinations__ellipse {
     top: 37%;
+  }
+
+  .stock--text {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .stock--text--install {
+    color: #3077c6;
+    font-weight: 500;
+  }
+
+  .stock-block {
+    height: 58px;
+    width: 58px;
+    background-color: #3077c6;
+    position: relative;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .sign-person {
+    fill: #ffffff;
+    position: absolute;
+  }
+
+  .sign-up__stock {
+    margin: 0;
+    gap: 16px;
+    width: 100vw;
+  }
+
+  .sign-up__close {
+    /*position: unset;*/
+    width: 16px;
+    height: 16px;
+    left: 17px;
+    top: 69px;
+  }
+
+  .sign-up__close:before,
+  .sign-up__close:after {
+    height: 16px;
+    left: 8px;
+  }
+
+  .sign-up__text {
+    flex-grow: 1;
   }
 
   .polygon {
