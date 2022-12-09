@@ -950,10 +950,78 @@ input::placeholder {
   .destinations__ellipse {
     width: 28px;
     height: 28px;
-    top: 73%;
-    left: 91.5%;
+    top: 72%;
+    left: 91%;
     box-shadow: 0 2px 3px #12121269;
     position: absolute;
+  }
+
+  .sign-up {
+    width: 100%;
+  }
+
+  .sign-up__fon {
+    padding: 24px 16px 24px 49px;
+    margin: 0;
+    height: 6.625rem;
+    background-color: #ffffff;
+  }
+
+  .destinations__ellipse {
+    top: 72%;
+  }
+
+  .stock--text {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .stock--text--install {
+    color: #3077c6;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .stock-block {
+    height: 58px;
+    width: 58px;
+    background-color: #3077c6;
+    position: relative;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .sign-person {
+    fill: #ffffff;
+    position: absolute;
+  }
+
+  .sign-up__stock {
+    margin: 0;
+    gap: 16px;
+    width: 100vw;
+  }
+
+  .sign-up__close {
+    width: 16px;
+    height: 16px;
+    left: 17px;
+    top: 69px;
+  }
+
+  .sign-up__close:before,
+  .sign-up__close:after {
+    height: 16px;
+    left: 8px;
+  }
+
+  .sign-up__text {
+    flex-grow: 1;
+  }
+
+  .polygon {
+    width: 6px;
   }
 
   .footer-column {
@@ -1139,6 +1207,10 @@ input::placeholder {
     gap: 16px;
   }
 
+  .destinations__ellipse {
+    top: 37%;
+  }
+
   .tab-button {
     font-size: 19px;
     padding: unset;
@@ -1177,72 +1249,12 @@ input::placeholder {
     margin-bottom: 0;
   }
 
-  .sign-up {
-    width: 100%;
-  }
-
-  .sign-up__fon {
-    padding: 24px 16px 24px 49px;
-    margin: 0;
-    height: 6.625rem;
-    background-color: #ffffff;
-  }
-
-  .destinations__ellipse {
-    top: 37%;
-  }
-
   .stock--text {
-    font-weight: 400;
     font-size: 14px;
-    margin-bottom: 0;
   }
 
   .stock--text--install {
-    color: #3077c6;
-    font-weight: 500;
-  }
-
-  .stock-block {
-    height: 58px;
-    width: 58px;
-    background-color: #3077c6;
-    position: relative;
-    border-radius: 4px;
-    flex-shrink: 0;
-  }
-
-  .sign-person {
-    fill: #ffffff;
-    position: absolute;
-  }
-
-  .sign-up__stock {
-    margin: 0;
-    gap: 16px;
-    width: 100vw;
-  }
-
-  .sign-up__close {
-    /*position: unset;*/
-    width: 16px;
-    height: 16px;
-    left: 17px;
-    top: 69px;
-  }
-
-  .sign-up__close:before,
-  .sign-up__close:after {
-    height: 16px;
-    left: 8px;
-  }
-
-  .sign-up__text {
-    flex-grow: 1;
-  }
-
-  .polygon {
-    width: 6px;
+font-size: 14px;
   }
 
   .footer-container__title {
